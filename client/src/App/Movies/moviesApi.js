@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-export function fetchMovies() {
+export function fetchMovies(payload) {
   return axios
-    .post('http://localhost:8080/movies/search')
+    .post('http://localhost:8080/movies/search', { title: payload })
     .then(({ data }) => data.movies);
 }

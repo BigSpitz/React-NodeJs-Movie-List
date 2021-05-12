@@ -7,10 +7,13 @@ const initialState = {
   loading: false
 };
 
-export const getMoviesAsync = createAsyncThunk('movies/getMovies', async () => {
-  const response = await fetchMovies();
-  return response;
-});
+export const getMoviesAsync = createAsyncThunk(
+  'movies/getMovies',
+  async (payload) => {
+    const response = await fetchMovies(payload);
+    return response;
+  }
+);
 
 export const moviesSlice = createSlice({
   name: 'movies',
@@ -32,5 +35,6 @@ export const moviesSlice = createSlice({
 });
 
 export const selectMovies = ({ movies }) => movies.movies;
+export const selectLoading = ({ movies }) => movies.loading;
 
 export default moviesSlice.reducer;
