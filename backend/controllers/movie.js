@@ -1,9 +1,11 @@
 const Movie = require('../models/movie');
 
 exports.searchMovies = (req, res, next) => {
-  Movie.find()
+  const { title } = req.body;
+  const titleRegex = new RegExp(title, 'i');
+
+  Movie.find({ title: { $regex: titleRegex } })
     .then((movies) => {
-      console.log(movies);
       res.status(200).json({ movies });
     })
     .catch((err) => {
@@ -11,6 +13,5 @@ exports.searchMovies = (req, res, next) => {
         err.statusCode = 500;
       }
       next(err);
-      console.log(err);
     });
 };

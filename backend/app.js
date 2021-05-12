@@ -5,7 +5,7 @@ const movieRoutes = require('./routes/moviesRoutes');
 
 const app = express();
 const MONGO_URI =
-  'mongodb+srv://movieTest:RNS36khMyZEJfP8j@cluster0.66hfz.mongodb.net/MovieDatabase?retryWrites=true&w=majority';
+  'mongodb+srv://movieTest:ElQWuKkj7PAKr4cZ@cluster0.66hfz.mongodb.net/MovieDatabase?retryWrites=true&w=majority';
 
 app.use(express.json());
 
