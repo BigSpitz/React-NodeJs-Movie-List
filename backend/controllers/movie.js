@@ -1,10 +1,14 @@
 const Movie = require('../models/movie');
 
 exports.searchMovies = (req, res, next) => {
-  const { title } = req.body;
+  const { title, genre } = req.body;
   const titleRegex = new RegExp(title, 'i');
+  let searchTerm = { title: { $regex: titleRegex } };
+  if (genre) {
+    searchTerm.genre_ids = genre;
+  }
 
-  Movie.find({ title: { $regex: titleRegex } })
+  Movie.find(searchTerm)
     .then((movies) => {
       res.status(200).json({ movies });
     })

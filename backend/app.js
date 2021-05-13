@@ -1,7 +1,8 @@
 const express = require('express');
 const mongoose = require('mongoose');
 
-const movieRoutes = require('./routes/moviesRoutes');
+const movieRoutes = require('./routes/movieRoutes');
+const genreRoutes = require('./routes/genreRoutes');
 
 const app = express();
 const MONGO_URI =
@@ -19,7 +20,8 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use('/', movieRoutes);
+app.use('/movie', movieRoutes);
+app.use('/genre', genreRoutes);
 
 mongoose
   .connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
