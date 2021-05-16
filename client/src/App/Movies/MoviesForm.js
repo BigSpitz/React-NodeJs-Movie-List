@@ -13,7 +13,6 @@ import styled from 'styled-components';
 import { selectGenres } from './moviesSlice';
 
 const StyledForm = styled.form`
-  margin-top: 20px;
   margin-bottom: 40px;
   display: flex;
   justify-content: center;

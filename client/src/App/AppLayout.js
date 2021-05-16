@@ -6,7 +6,9 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 
 const StyledContainer = styled.div`
-  min-height: calc(100vh - 128px);
+  min-height: calc(100vh - 168px);
+  margin-top: 20px;
+  margin-bottom: 20px;
 `;
 
 const AppLayout = ({ children }) => {
