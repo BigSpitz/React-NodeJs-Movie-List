@@ -5,9 +5,9 @@ import noImage from '../../../../assets/images/noImage.jpg';
 
 const ImageCard = ({ imagePath, children }) => {
   return (
-    <Card style={{height: '100%'}}>
-      <CardMedia height={288} component='img' src={imagePath || noImage} />
-      <CardContent style={{position: 'relative'}}>{children}</CardContent>
+    <Card style={{ height: '100%' }}>
+      <CardMedia component="img" src={imagePath || noImage} />
+      <CardContent style={{ position: 'relative' }}>{children}</CardContent>
     </Card>
   );
 };

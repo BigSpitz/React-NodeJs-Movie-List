@@ -2,24 +2,28 @@ import {
   BrowserRouter as Router,
   Route,
   Switch,
-  Redirect
+  Redirect,
 } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
 
 import AppLayout from './AppLayout';
 import Movies from './Movies';
 import './App.css';
 
+import 'react-toastify/dist/ReactToastify.css';
+
 const App = () => {
   return (
     <Router>
       <Switch>
-        <Route exact path='/'>
-          <AppLayout>
+        <AppLayout>
+          <ToastContainer />
+          <Route exact path="/">
             <Movies />
-          </AppLayout>
-        </Route>
-        <Route path='*'>
-          <Redirect to='/' />
+          </Route>
+        </AppLayout>
+        <Route path="*">
+          <Redirect to="/" />
         </Route>
       </Switch>
     </Router>

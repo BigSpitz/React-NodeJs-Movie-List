@@ -1,6 +1,6 @@
-import React from "react";
-import { CircularProgress, Typography, Box } from "@material-ui/core";
-import styled from "styled-components";
+import React from 'react';
+import { CircularProgress, Typography, Box } from '@material-ui/core';
+import styled from 'styled-components';
 
 const StyledRatingContainer = styled.div`
   width: 50px;
@@ -33,7 +33,6 @@ const Rating = ({ rating }) => {
           <Typography
             variant="subtitle2"
             component="div"
-            color="white"
             style={{ fontWeight: 600 }}
           >{`${Math.round(rating)}%`}</Typography>
         </Box>

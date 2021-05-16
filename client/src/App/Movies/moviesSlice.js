@@ -1,14 +1,18 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import { fetchMovies, fetchGenres } from './moviesApi';
+import { toast } from 'react-toastify';
+
+const showError = (message) => {
+  toast.error(message);
+};
 
 const initialState = {
   genres: [],
   searchResults: {
     movies: [],
-    totalItems: 0
+    totalItems: 0,
   },
-  error: false,
-  loading: false
+  loading: false,
 };
 
 export const getMoviesAsync = createAsyncThunk(
@@ -40,14 +44,20 @@ export const moviesSlice = createSlice({
         state.searchResults = action.payload;
       })
       .addCase(getMoviesAsync.rejected, (state, { error }) => {
-        console.log('error', error);
-        state.error = error.message;
+        const message = `Error in getting movies ${error.message}`;
+        state.loading = false;
+        showError(message);
       })
       .addCase(getGenresAsync.fulfilled, (state, action) => {
         state.loading = false;
         state.genres = action.payload;
+      })
+      .addCase(getGenresAsync.rejected, (state, { error }) => {
+        const message = `Error in getting genres ${error.message}`;
+        showError(message);
+        state.loading = false;
       });
-  }
+  },
 });
 
 export const selectMovies = ({ movies }) => movies.searchResults;
