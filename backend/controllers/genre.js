@@ -1,6 +1,6 @@
-const Genre = require('../models/genre');
+import Genre from '../models/genre.js';
 
-exports.getGenres = (req, res, next) => {
+export const getGenres = (req, res, next) => {
   Genre.find()
     .then((genres) => {
       res.status(200).json({ genres });

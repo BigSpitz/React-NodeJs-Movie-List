@@ -1,9 +1,10 @@
-const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
+import mongoose from 'mongoose';
+
+const { Schema, model } = mongoose;
 
 const genreSchema = new Schema({
   _id: Number,
-  name: String
+  name: String,
 });
 
-module.exports = mongoose.model('Genre', genreSchema);
+export default model('Genre', genreSchema);

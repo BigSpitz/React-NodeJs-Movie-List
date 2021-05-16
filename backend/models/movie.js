@@ -1,5 +1,6 @@
-const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
+import mongoose from 'mongoose';
+
+const { Schema, model } = mongoose;
 
 const movieSchema = new Schema({
   backdrop_path: String,
@@ -13,7 +14,7 @@ const movieSchema = new Schema({
   release_date: String,
   title: String,
   vote_average: Number,
-  vote_count: Number
+  vote_count: Number,
 });
 
-module.exports = mongoose.model('Movie', movieSchema);
+export default model('Movie', movieSchema);

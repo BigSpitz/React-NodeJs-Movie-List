@@ -1,9 +1,9 @@
-const express = require('express');
+import express from 'express';
 
-const genreController = require('../controllers/genre');
+import { getGenres } from '../controllers/genre.js';
 
 const router = express.Router();
 
-router.get('/', genreController.getGenres);
+router.get('/', getGenres);
 
-module.exports = router;
+export default router;

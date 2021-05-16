@@ -1,8 +1,8 @@
-const express = require('express');
-const mongoose = require('mongoose');
+import express from 'express';
+import mongoose from 'mongoose';
 
-const movieRoutes = require('./routes/movieRoutes');
-const genreRoutes = require('./routes/genreRoutes');
+import movieRoutes from './routes/movieRoutes.js';
+import genreRoutes from './routes/genreRoutes.js';
 
 const app = express();
 const MONGO_URI =

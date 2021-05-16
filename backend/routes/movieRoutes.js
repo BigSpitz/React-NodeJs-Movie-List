@@ -1,10 +1,15 @@
-const express = require('express');
-const {body} = require('express-validator')
+import express from 'express';
 
-const movieController = require('../controllers/movie');
+import { body } from 'express-validator';
+
+import { searchMovies } from '../controllers/movie.js';
 
 const router = express.Router();
 
-router.post('/search', [body('title').trim(), body('genre'), body('page').isInt({min: 1})], movieController.searchMovies);
+router.post(
+  '/search',
+  [body('title').trim(), body('genre'), body('page').isInt({ min: 1 })],
+  searchMovies
+);
 
-module.exports = router;
+export default router;
