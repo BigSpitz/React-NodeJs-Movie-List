@@ -1,5 +1,4 @@
 import Movie from '../models/movie.js';
-import { validationResult } from 'express-validator';
 
 export const searchMovies = (req, res, next) => {
   const { title, genre, page } = req.body;

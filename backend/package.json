@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "description": "Backend for React-NodeJs-Movie-List",
   "type": "module",
-  "main": "app.js",
+  "main": "index.js",
   "jest": {
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "transform": {}
   },
   "scripts": {
-    "test": "jest",
-    "start": "nodemon app.js"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --detectOpenHandles",
+    "start": "nodemon index.js"
   },
   "author": "Nikolaos Xeras",
   "license": "ISC",

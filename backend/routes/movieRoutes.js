@@ -1,10 +1,11 @@
 import express from 'express';
 
-import { body } from 'express-validator';
+import validator from 'express-validator';
 
 import { searchMovies } from '../controllers/movie.js';
 
 const router = express.Router();
+const { body } = validator;
 
 router.post(
   '/search',
