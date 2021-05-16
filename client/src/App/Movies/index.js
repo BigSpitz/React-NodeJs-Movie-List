@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import MoviesList from './MoviesList';
 import MoviesForm from './MoviesForm';
+import MoviesPagination from './MoviesPagination'
 import Loader from './components/Loader';
 import {
   getMoviesAsync,
@@ -13,34 +14,36 @@ import {
 
 const initialFormFields = {
   title: '',
-  genre: ''
+  genre: '',
+  page: 1
 };
 
 const Movies = () => {
-  const [searchFields, setSearchFields] = useState(initialFormFields);
-
   const dispatch = useDispatch();
-  const moviesArray = useSelector(selectMovies);
+  const [searchFields, setSearchFields] = useState(initialFormFields);
+  const {movies, totalItems} = useSelector(selectMovies);
   const loading = useSelector(selectLoading);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    dispatch(getMoviesAsync(searchFields));
-  };
+  const handlePageChange = (e, page) => {
+    setSearchFields({...searchFields, page})
+  }
 
   useEffect(() => {
-    dispatch(getMoviesAsync());
+    dispatch(getMoviesAsync(searchFields));
+  }, [searchFields, dispatch]);
+
+  useEffect(() => {
     dispatch(getGenresAsync());
   }, [dispatch]);
 
   return (
     <>
       <MoviesForm
-        handleSubmit={handleSubmit}
         searchFields={searchFields}
         setSearchFields={setSearchFields}
       />
-      {loading ? <Loader /> : <MoviesList movieList={moviesArray} />}
+      <MoviesPagination totalItems={totalItems} handlePageChange={handlePageChange} page={searchFields.page} />
+      {loading ? <Loader /> : <MoviesList movieList={movies} />}
     </>
   );
 };

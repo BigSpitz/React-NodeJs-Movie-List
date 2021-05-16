@@ -1,13 +1,13 @@
 import axios from 'axios';
 
-export function fetchMovies(payload) {
+export const fetchMovies = (payload) => {
   return axios
-    .post('http://localhost:8080/movie/search', payload)
-    .then(({ data }) => data.movies);
+    .post('/movie/search', payload)
+    .then(({ data }) => data);
 }
 
-export function fetchGenres() {
+export const fetchGenres = () => {
   return axios
-    .get('http://localhost:8080/genre')
+    .get('/genre')
     .then(({ data }) => data.genres);
 }

@@ -3,7 +3,10 @@ import { fetchMovies, fetchGenres } from './moviesApi';
 
 const initialState = {
   genres: [],
-  movies: [],
+  searchResults: {
+    movies: [],
+    totalItems: 0
+  },
   error: false,
   loading: false
 };
@@ -34,7 +37,7 @@ export const moviesSlice = createSlice({
       })
       .addCase(getMoviesAsync.fulfilled, (state, action) => {
         state.loading = false;
-        state.movies = action.payload;
+        state.searchResults = action.payload;
       })
       .addCase(getMoviesAsync.rejected, (state, { error }) => {
         console.log('error', error);
@@ -47,7 +50,7 @@ export const moviesSlice = createSlice({
   }
 });
 
-export const selectMovies = ({ movies }) => movies.movies;
+export const selectMovies = ({ movies }) => movies.searchResults;
 export const selectGenres = ({ movies }) => movies.genres;
 export const selectLoading = ({ movies }) => movies.loading;
 

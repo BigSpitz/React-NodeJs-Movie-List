@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { useSelector } from 'react-redux';
 import {
   TextField,
@@ -20,13 +20,27 @@ const StyledForm = styled.form`
   flex-wrap: wrap;
 `;
 
-const MoviesForm = ({ handleSubmit, searchFields, setSearchFields }) => {
+const MoviesForm = ({ setSearchFields }) => {
   const genres = useSelector(selectGenres);
-  const { title, genre } = searchFields;
+  const [selectedGenre, setSelectedGenre] = useState('')
+  const [selectedTitle, setSelectedTitle] = useState('')
 
-  const handleFieldChange = (e) => {
-    setSearchFields({ ...searchFields, [e.target.name]: e.target.value });
-  };
+  const handleGenreChange = ({target}) => {
+    setSelectedGenre(target.value)
+  }
+
+  const handleTitleChange = ({target}) => {
+    setSelectedTitle(target.value)
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    setSearchFields({
+      title: selectedTitle,
+      genre: selectedGenre,
+      page: 1
+    })
+  }
 
   return (
     <StyledForm onSubmit={handleSubmit}>
@@ -35,8 +49,8 @@ const MoviesForm = ({ handleSubmit, searchFields, setSearchFields }) => {
         <Select
           name='genre'
           id='genre'
-          value={genre}
-          onChange={handleFieldChange}
+          value={selectedGenre}
+          onChange={handleGenreChange}
           style={{ minWidth: '150px' }}
         >
           <MenuItem value=''>All</MenuItem>
@@ -51,8 +65,8 @@ const MoviesForm = ({ handleSubmit, searchFields, setSearchFields }) => {
         name='title'
         id='title'
         label='Movie Title'
-        value={title}
-        onChange={handleFieldChange}
+        value={selectedTitle}
+        onChange={handleTitleChange}
         style={{ margin: '0px 20px', maxWidth: '500px', flexGrow: 1 }}
       />
       <Button size='medium' type='submit' style={{ marginTop: '15px' }}>
