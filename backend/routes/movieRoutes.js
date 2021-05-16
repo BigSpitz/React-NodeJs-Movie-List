@@ -10,8 +10,11 @@ const { body } = validator;
 router.post(
   '/search',
   [
-    body('title').trim().exists().withMessage('title is mandatory'),
-    body('genre').exists().withMessage('genre is mandatory'),
+    body('title')
+      .exists({ checkNull: true })
+      .withMessage('title is mandatory')
+      .trim(),
+    body('genre').exists({ checkNull: true }).withMessage('genre is mandatory'),
     body('page')
       .exists()
       .withMessage('page is mandatory')
