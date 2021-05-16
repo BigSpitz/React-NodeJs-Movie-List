@@ -23,6 +23,11 @@ app.use((req, res, next) => {
 app.use('/movie', movieRoutes);
 app.use('/genre', genreRoutes);
 
+app.use((error, req, res, next) => {
+  const { statusCode = 500, message, data } = error;
+  res.status(statusCode).json({ message, data });
+});
+
 mongoose
   .connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
   .catch((err) => console.log(err));
