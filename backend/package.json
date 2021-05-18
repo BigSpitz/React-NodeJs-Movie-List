@@ -9,7 +9,7 @@
     "transform": {}
   },
   "scripts": {
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --detectOpenHandles",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watchAll --collectCoverage",
     "start": "nodemon index.js"
   },
   "author": "Nikolaos Xeras",

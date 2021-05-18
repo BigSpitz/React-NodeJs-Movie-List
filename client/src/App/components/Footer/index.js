@@ -10,7 +10,7 @@ const StyledFooter = styled.div`
 `;
 
 const Footer = () => {
-  return <StyledFooter>Copywrite 2021</StyledFooter>;
+  return <StyledFooter>Copyright 2021</StyledFooter>;
 };
 
 export default Footer;
