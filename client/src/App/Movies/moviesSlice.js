@@ -1,6 +1,8 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import { fetchMovies, fetchGenres } from './moviesApi';
 import { toast } from 'react-toastify';
+import { parseGenres } from '../../utils/parseGenres';
+import { parseMovies } from '../../utils/parseMovies';
 
 const showError = (message) => {
   toast.error(message);
@@ -41,7 +43,12 @@ export const moviesSlice = createSlice({
       })
       .addCase(getMoviesAsync.fulfilled, (state, action) => {
         state.loading = false;
-        state.searchResults = action.payload;
+        if (typeof action.payload === 'object' && action.payload !== null) {
+          state.searchResults = {
+            movies: parseMovies(action.payload.data),
+            totalItems: action.payload.meta.totalItems,
+          };
+        }
       })
       .addCase(getMoviesAsync.rejected, (state, { error }) => {
         const message = `Error in getting movies ${error.message}`;
@@ -50,7 +57,9 @@ export const moviesSlice = createSlice({
       })
       .addCase(getGenresAsync.fulfilled, (state, action) => {
         state.loading = false;
-        state.genres = action.payload;
+        if (typeof action.payload === 'object' && action.payload !== null) {
+          state.genres = parseGenres(action.payload.data);
+        }
       })
       .addCase(getGenresAsync.rejected, (state, { error }) => {
         const message = `Error in getting genres ${error.message}`;

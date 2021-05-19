@@ -6,8 +6,15 @@ export const searchMovies = async (req, res, next) => {
   const { title, genre, page } = req.body;
   try {
     if (!!errors.length) {
-      const message = errors.map(({ msg }) => msg).join(', ');
-      const error = new Error(`Invalid data, ${message}`);
+      const message = errors.map(({ value, msg, param, location }) => {
+        let errorObj = {
+          source: { [location]: param },
+          title: `Invalid Attribute ${value}`,
+          detail: msg,
+        };
+        return errorObj;
+      });
+      const error = new Error(JSON.stringify(message));
       error.statusCode = 400;
       throw error;
     }
@@ -27,8 +34,10 @@ export const searchMovies = async (req, res, next) => {
       .skip((currentPage - 1) * resultsPerPage)
       .limit(resultsPerPage);
     res.status(200).json({
-      movies,
-      totalItems,
+      meta: {
+        totalItems,
+      },
+      data: parseMovies(movies),
     });
   } catch (error) {
     if (!error.statusCode) {
@@ -36,4 +45,17 @@ export const searchMovies = async (req, res, next) => {
     }
     next(error);
   }
+};
+
+const parseMovies = (moviesToParse) => {
+  return moviesToParse.map((movie) => parseMovie(movie));
+};
+
+const parseMovie = (movie) => {
+  let parsedMovie = {
+    type: 'Movies',
+    id: movie._id || '',
+  };
+  parsedMovie.attributes = movie;
+  return parsedMovie;
 };

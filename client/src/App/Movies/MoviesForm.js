@@ -49,11 +49,12 @@ const MoviesForm = ({ setSearchFields, genres = [] }) => {
           style={{ minWidth: '150px' }}
         >
           <MenuItem value="">All</MenuItem>
-          {genres.map(({ _id, name }) => (
-            <MenuItem value={_id} key={_id}>
-              {name}
-            </MenuItem>
-          ))}
+          {genres &&
+            genres.map(({ id, name }) => (
+              <MenuItem value={id} key={id}>
+                {name}
+              </MenuItem>
+            ))}
         </Select>
       </FormControl>
       <TextField
