@@ -17,7 +17,7 @@ export const getGenres = async (req, res, next) => {
   }
 };
 
-const parseGenres = (genresToParse) => {
+export const parseGenres = (genresToParse) => {
   return genresToParse.map((genre) => parseGenre(genre));
 };
 

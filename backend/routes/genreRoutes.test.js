@@ -19,9 +19,11 @@ afterEach((done) => {
 describe('GET /genres', () => {
   describe('get all genres', () => {
     test('should respond with a 200 status code', async (done) => {
-      const response = await request(app).get('/genre');
+      const response = await request(app)
+        .get('/genre')
+        .set('Accept', 'application/vnd.api+json');
       expect(response.statusCode).toBe(200);
-      expect(Array.isArray(response.body.genres)).toBeTruthy();
+      expect(Array.isArray(response.body.data)).toBeTruthy();
       done();
     });
   });

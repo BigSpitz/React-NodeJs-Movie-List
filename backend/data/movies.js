@@ -14,7 +14,7 @@ export const moviesData = [
     release_date: '2021-04-07',
     title: 'Mortal Kombat',
     vote_average: 7.7,
-    vote_count: 2229
+    vote_count: 2229,
   },
   {
     backdrop_path:
@@ -31,7 +31,7 @@ export const moviesData = [
     release_date: '2021-03-24',
     title: 'Godzilla vs. Kong',
     vote_average: 8.1,
-    vote_count: 5349
+    vote_count: 5349,
   },
   {
     backdrop_path:
@@ -48,7 +48,7 @@ export const moviesData = [
     release_date: '2021-04-29',
     title: "Tom Clancy's Without Remorse",
     vote_average: 7.3,
-    vote_count: 661
+    vote_count: 661,
   },
   {
     backdrop_path:
@@ -65,7 +65,7 @@ export const moviesData = [
     release_date: '2021-03-26',
     title: 'Nobody',
     vote_average: 8.5,
-    vote_count: 1276
+    vote_count: 1276,
   },
   {
     backdrop_path:
@@ -82,7 +82,7 @@ export const moviesData = [
     release_date: '2021-04-16',
     title: 'Vanquish',
     vote_average: 6.4,
-    vote_count: 65
+    vote_count: 65,
   },
   {
     backdrop_path:
@@ -99,7 +99,7 @@ export const moviesData = [
     release_date: '2021-03-18',
     title: "Zack Snyder's Justice League",
     vote_average: 8.5,
-    vote_count: 5342
+    vote_count: 5342,
   },
   {
     backdrop_path:
@@ -116,7 +116,7 @@ export const moviesData = [
     release_date: '2021-03-31',
     title: 'The Unholy',
     vote_average: 5.7,
-    vote_count: 74
+    vote_count: 74,
   },
   {
     backdrop_path:
@@ -133,7 +133,7 @@ export const moviesData = [
     release_date: '2020-10-16',
     title: 'Demon Slayer -Kimetsu no Yaiba- The Movie: Mugen Train',
     vote_average: 8.4,
-    vote_count: 865
+    vote_count: 865,
   },
   {
     backdrop_path:
@@ -150,7 +150,7 @@ export const moviesData = [
     release_date: '2021-01-15',
     title: 'The Marksman',
     vote_average: 7.5,
-    vote_count: 410
+    vote_count: 410,
   },
   {
     backdrop_path:
@@ -167,7 +167,7 @@ export const moviesData = [
     release_date: '2021-04-04',
     title: 'Miraculous World: Shanghai – The Legend of Ladydragon',
     vote_average: 7.8,
-    vote_count: 267
+    vote_count: 267,
   },
   {
     backdrop_path:
@@ -184,7 +184,7 @@ export const moviesData = [
     release_date: '2021-03-03',
     title: 'Raya and the Last Dragon',
     vote_average: 8.2,
-    vote_count: 2703
+    vote_count: 2703,
   },
   {
     backdrop_path:
@@ -201,7 +201,7 @@ export const moviesData = [
     release_date: '2021-04-02',
     title: 'Monster Pets: A Hotel Transylvania Short',
     vote_average: 7.6,
-    vote_count: 80
+    vote_count: 80,
   },
   {
     backdrop_path:
@@ -218,7 +218,7 @@ export const moviesData = [
     release_date: '2021-04-09',
     title: 'Thunder Force',
     vote_average: 5.8,
-    vote_count: 533
+    vote_count: 533,
   },
   {
     backdrop_path:
@@ -235,7 +235,7 @@ export const moviesData = [
     release_date: '2021-02-24',
     title: 'Chaos Walking',
     vote_average: 7.3,
-    vote_count: 531
+    vote_count: 531,
   },
   {
     backdrop_path:
@@ -252,7 +252,7 @@ export const moviesData = [
     release_date: '2021-01-29',
     title: 'Below Zero',
     vote_average: 6.4,
-    vote_count: 542
+    vote_count: 542,
   },
   {
     backdrop_path:
@@ -269,7 +269,7 @@ export const moviesData = [
     release_date: '2021-05-07',
     title: 'Benny Loves You',
     vote_average: 7.2,
-    vote_count: 5
+    vote_count: 5,
   },
   {
     backdrop_path:
@@ -286,7 +286,7 @@ export const moviesData = [
     release_date: '2020-12-03',
     title: 'Monster Hunter',
     vote_average: 7.1,
-    vote_count: 1607
+    vote_count: 1607,
   },
   {
     backdrop_path:
@@ -303,7 +303,7 @@ export const moviesData = [
     release_date: '2021-03-05',
     title: 'Sentinelle',
     vote_average: 6,
-    vote_count: 371
+    vote_count: 371,
   },
   {
     backdrop_path:
@@ -320,7 +320,7 @@ export const moviesData = [
     release_date: '2021-04-27',
     title: 'Justice Society: World War II',
     vote_average: 8.1,
-    vote_count: 155
+    vote_count: 155,
   },
   {
     backdrop_path:
@@ -337,7 +337,7 @@ export const moviesData = [
     release_date: '2021-02-26',
     title: 'Cherry',
     vote_average: 7.5,
-    vote_count: 578
+    vote_count: 578,
   },
 
   {
@@ -355,7 +355,7 @@ export const moviesData = [
     release_date: '2020-12-16',
     title: 'Wonder Woman 1984',
     vote_average: 6.7,
-    vote_count: 5076
+    vote_count: 5076,
   },
   {
     backdrop_path:
@@ -372,7 +372,7 @@ export const moviesData = [
     release_date: '2021-02-11',
     title: 'Tom & Jerry',
     vote_average: 7.3,
-    vote_count: 1313
+    vote_count: 1313,
   },
   {
     backdrop_path:
@@ -389,7 +389,7 @@ export const moviesData = [
     release_date: '2021-01-15',
     title: 'Outside the Wire',
     vote_average: 6.5,
-    vote_count: 1061
+    vote_count: 1061,
   },
   {
     backdrop_path:
@@ -406,7 +406,7 @@ export const moviesData = [
     release_date: '2019-12-19',
     title: 'Ashfall',
     vote_average: 6.5,
-    vote_count: 242
+    vote_count: 242,
   },
   {
     backdrop_path:
@@ -423,7 +423,7 @@ export const moviesData = [
     release_date: '2020-07-09',
     title: 'Black Water: Abyss',
     vote_average: 5,
-    vote_count: 210
+    vote_count: 210,
   },
   {
     backdrop_path:
@@ -440,7 +440,7 @@ export const moviesData = [
     release_date: '2020-12-25',
     title: 'Soul',
     vote_average: 8.3,
-    vote_count: 5936
+    vote_count: 5936,
   },
   {
     backdrop_path:
@@ -457,7 +457,7 @@ export const moviesData = [
     release_date: '2020-04-12',
     title: "Mortal Kombat Legends: Scorpion's Revenge",
     vote_average: 8.4,
-    vote_count: 913
+    vote_count: 913,
   },
   {
     backdrop_path:
@@ -474,7 +474,7 @@ export const moviesData = [
     release_date: '2021-02-05',
     title: 'Space Sweepers',
     vote_average: 7.2,
-    vote_count: 533
+    vote_count: 533,
   },
   {
     backdrop_path:
@@ -491,7 +491,7 @@ export const moviesData = [
     release_date: '2021-02-06',
     title: 'New Gods: Nezha Reborn',
     vote_average: 8.8,
-    vote_count: 128
+    vote_count: 128,
   },
   {
     backdrop_path:
@@ -508,7 +508,7 @@ export const moviesData = [
     release_date: '2020-11-25',
     title: 'The Croods: A New Age',
     vote_average: 7.5,
-    vote_count: 2050
+    vote_count: 2050,
   },
   {
     backdrop_path:
@@ -525,7 +525,7 @@ export const moviesData = [
     release_date: '2021-03-12',
     title: 'Come True',
     vote_average: 5.8,
-    vote_count: 45
+    vote_count: 45,
   },
   {
     backdrop_path:
@@ -542,7 +542,7 @@ export const moviesData = [
     release_date: '2021-04-16',
     title: 'For the Sake of Vicious',
     vote_average: 6.5,
-    vote_count: 2
+    vote_count: 2,
   },
   {
     backdrop_path:
@@ -559,7 +559,7 @@ export const moviesData = [
     release_date: '2021-01-22',
     title: 'Twist',
     vote_average: 6.9,
-    vote_count: 54
+    vote_count: 54,
   },
   {
     backdrop_path:
@@ -576,7 +576,7 @@ export const moviesData = [
     release_date: '2021-01-28',
     title: 'The Little Things',
     vote_average: 6.4,
-    vote_count: 819
+    vote_count: 819,
   },
   {
     backdrop_path:
@@ -593,7 +593,7 @@ export const moviesData = [
     release_date: '2020-12-17',
     title: 'Breach',
     vote_average: 4.5,
-    vote_count: 392
+    vote_count: 392,
   },
   {
     backdrop_path:
@@ -610,7 +610,7 @@ export const moviesData = [
     release_date: '2021-04-03',
     title: 'Rise of the Mummy',
     vote_average: 4.1,
-    vote_count: 14
+    vote_count: 14,
   },
   {
     backdrop_path:
@@ -627,7 +627,7 @@ export const moviesData = [
     release_date: '2021-02-19',
     title: 'Silk Road',
     vote_average: 6.9,
-    vote_count: 45
+    vote_count: 45,
   },
   {
     backdrop_path:
@@ -644,7 +644,7 @@ export const moviesData = [
     release_date: '2020-09-30',
     title: 'Vanguard',
     vote_average: 6.2,
-    vote_count: 299
+    vote_count: 299,
   },
   {
     backdrop_path:
@@ -661,7 +661,7 @@ export const moviesData = [
     release_date: '2021-03-26',
     title: 'Bad Trip',
     vote_average: 5.9,
-    vote_count: 197
+    vote_count: 197,
   },
   {
     backdrop_path:
@@ -678,7 +678,7 @@ export const moviesData = [
     release_date: '2020-10-25',
     title: 'Skylines',
     vote_average: 5.9,
-    vote_count: 270
+    vote_count: 270,
   },
 
   {
@@ -696,7 +696,7 @@ export const moviesData = [
     release_date: '2020-09-26',
     title: 'Miraculous World: New York, United HeroeZ',
     vote_average: 8.3,
-    vote_count: 680
+    vote_count: 680,
   },
   {
     backdrop_path:
@@ -713,7 +713,7 @@ export const moviesData = [
     release_date: '2020-11-20',
     title: 'Jiu Jitsu',
     vote_average: 5.2,
-    vote_count: 375
+    vote_count: 375,
   },
   {
     backdrop_path:
@@ -730,7 +730,7 @@ export const moviesData = [
     release_date: '2021-02-11',
     title: 'Red Dot',
     vote_average: 5.9,
-    vote_count: 451
+    vote_count: 451,
   },
   {
     backdrop_path:
@@ -747,7 +747,7 @@ export const moviesData = [
     release_date: '2021-01-26',
     title: 'Wrong Turn',
     vote_average: 6.2,
-    vote_count: 375
+    vote_count: 375,
   },
   {
     backdrop_path:
@@ -764,7 +764,7 @@ export const moviesData = [
     release_date: '2020-01-15',
     title: 'Bad Boys for Life',
     vote_average: 7.2,
-    vote_count: 6254
+    vote_count: 6254,
   },
   {
     backdrop_path:
@@ -783,7 +783,7 @@ export const moviesData = [
     title:
       'Birds of Prey (and the Fantabulous Emancipation of One Harley Quinn)',
     vote_average: 7.1,
-    vote_count: 7450
+    vote_count: 7450,
   },
   {
     backdrop_path:
@@ -800,7 +800,7 @@ export const moviesData = [
     release_date: '2021-03-26',
     title: 'Blood Moon',
     vote_average: 6.5,
-    vote_count: 14
+    vote_count: 14,
   },
   {
     backdrop_path:
@@ -817,7 +817,7 @@ export const moviesData = [
     release_date: '2021-05-20',
     title: 'Breaking News in Yuba County',
     vote_average: 0,
-    vote_count: 0
+    vote_count: 0,
   },
   {
     backdrop_path:
@@ -834,7 +834,7 @@ export const moviesData = [
     release_date: '2020-07-02',
     title: 'Ava',
     vote_average: 5.7,
-    vote_count: 1521
+    vote_count: 1521,
   },
   {
     backdrop_path:
@@ -851,7 +851,7 @@ export const moviesData = [
     release_date: '2021-04-02',
     title: 'Just Say Yes',
     vote_average: 5.8,
-    vote_count: 86
+    vote_count: 86,
   },
   {
     backdrop_path:
@@ -868,7 +868,7 @@ export const moviesData = [
     release_date: '2021-04-22',
     title: 'Stowaway',
     vote_average: 6.1,
-    vote_count: 438
+    vote_count: 438,
   },
   {
     backdrop_path:
@@ -885,7 +885,7 @@ export const moviesData = [
     release_date: '2020-09-03',
     title: 'Night in Paradise',
     vote_average: 7,
-    vote_count: 95
+    vote_count: 95,
   },
   {
     backdrop_path:
@@ -902,7 +902,7 @@ export const moviesData = [
     release_date: '2020-09-03',
     title: 'Honest Thief',
     vote_average: 6.5,
-    vote_count: 837
+    vote_count: 837,
   },
   {
     backdrop_path:
@@ -919,7 +919,7 @@ export const moviesData = [
     release_date: '2019-10-02',
     title: 'Joker',
     vote_average: 8.2,
-    vote_count: 17510
+    vote_count: 17510,
   },
   {
     backdrop_path:
@@ -936,7 +936,7 @@ export const moviesData = [
     release_date: '2021-03-08',
     title: 'Evangelion: 3.0+1.0 Thrice Upon a Time',
     vote_average: 6.5,
-    vote_count: 6
+    vote_count: 6,
   },
   {
     backdrop_path:
@@ -953,7 +953,7 @@ export const moviesData = [
     release_date: '2020-08-22',
     title: 'Tenet',
     vote_average: 7.3,
-    vote_count: 5204
+    vote_count: 5204,
   },
   {
     backdrop_path:
@@ -970,7 +970,7 @@ export const moviesData = [
     release_date: '2019-08-01',
     title: 'Fast & Furious Presents: Hobbs & Shaw',
     vote_average: 6.9,
-    vote_count: 4866
+    vote_count: 4866,
   },
   {
     backdrop_path:
@@ -987,7 +987,7 @@ export const moviesData = [
     release_date: '2021-02-12',
     title: 'Tentacles',
     vote_average: 6.5,
-    vote_count: 70
+    vote_count: 70,
   },
   {
     backdrop_path:
@@ -1004,7 +1004,7 @@ export const moviesData = [
     release_date: '2020-01-16',
     title: 'The Heist of the Century',
     vote_average: 7.9,
-    vote_count: 487
+    vote_count: 487,
   },
   {
     backdrop_path:
@@ -1021,7 +1021,7 @@ export const moviesData = [
     release_date: '2019-12-20',
     title: 'My Hero Academia: Heroes Rising',
     vote_average: 8.5,
-    vote_count: 691
+    vote_count: 691,
   },
 
   {
@@ -1039,7 +1039,7 @@ export const moviesData = [
     release_date: '2021-05-21',
     title: 'A Quiet Place Part II',
     vote_average: 0,
-    vote_count: 0
+    vote_count: 0,
   },
   {
     backdrop_path:
@@ -1056,7 +1056,7 @@ export const moviesData = [
     release_date: '2020-04-24',
     title: 'Extraction',
     vote_average: 7.4,
-    vote_count: 3816
+    vote_count: 3816,
   },
   {
     backdrop_path:
@@ -1073,7 +1073,7 @@ export const moviesData = [
     release_date: '2020-05-08',
     title: 'The Legion',
     vote_average: 6.5,
-    vote_count: 69
+    vote_count: 69,
   },
   {
     backdrop_path:
@@ -1090,7 +1090,7 @@ export const moviesData = [
     release_date: '2020-03-05',
     title: 'Bloodshot',
     vote_average: 6.9,
-    vote_count: 3757
+    vote_count: 3757,
   },
   {
     backdrop_path:
@@ -1107,7 +1107,7 @@ export const moviesData = [
     release_date: '2021-03-05',
     title: 'Coming 2 America',
     vote_average: 6.8,
-    vote_count: 1313
+    vote_count: 1313,
   },
   {
     backdrop_path:
@@ -1124,7 +1124,7 @@ export const moviesData = [
     release_date: '2020-02-04',
     title: 'Dragonheart: Vengeance',
     vote_average: 7,
-    vote_count: 219
+    vote_count: 219,
   },
   {
     backdrop_path:
@@ -1141,7 +1141,7 @@ export const moviesData = [
     release_date: '2020-08-22',
     title: 'Forgotten We’ll Be',
     vote_average: 6.7,
-    vote_count: 5
+    vote_count: 5,
   },
   {
     backdrop_path:
@@ -1158,7 +1158,7 @@ export const moviesData = [
     release_date: '2021-03-18',
     title: 'Secret Magic Control Agency',
     vote_average: 7.2,
-    vote_count: 131
+    vote_count: 131,
   },
   {
     backdrop_path:
@@ -1175,7 +1175,7 @@ export const moviesData = [
     release_date: '2020-08-07',
     title: 'The Tax Collector',
     vote_average: 5.8,
-    vote_count: 283
+    vote_count: 283,
   },
   {
     backdrop_path:
@@ -1192,7 +1192,7 @@ export const moviesData = [
     release_date: '2020-08-21',
     title: 'The Unfamiliar',
     vote_average: 6.3,
-    vote_count: 54
+    vote_count: 54,
   },
   {
     backdrop_path:
@@ -1209,7 +1209,7 @@ export const moviesData = [
     release_date: '2019-07-29',
     title: 'Aquaslash',
     vote_average: 4.1,
-    vote_count: 53
+    vote_count: 53,
   },
   {
     backdrop_path:
@@ -1226,7 +1226,7 @@ export const moviesData = [
     release_date: '2021-04-22',
     title: 'The Mitchells vs. The Machines',
     vote_average: 8.1,
-    vote_count: 434
+    vote_count: 434,
   },
   {
     backdrop_path:
@@ -1243,7 +1243,7 @@ export const moviesData = [
     release_date: '2018-04-25',
     title: 'Avengers: Infinity War',
     vote_average: 8.3,
-    vote_count: 21720
+    vote_count: 21720,
   },
   {
     backdrop_path:
@@ -1260,7 +1260,7 @@ export const moviesData = [
     release_date: '2020-09-02',
     title: 'After We Collided',
     vote_average: 7.3,
-    vote_count: 3719
+    vote_count: 3719,
   },
   {
     backdrop_path: null,
@@ -1276,7 +1276,7 @@ export const moviesData = [
     release_date: '2019-12-17',
     title: 'Pray for Us',
     vote_average: 0,
-    vote_count: 0
+    vote_count: 0,
   },
   {
     backdrop_path:
@@ -1293,7 +1293,7 @@ export const moviesData = [
     release_date: '2021-02-12',
     title: 'Fear of Rain',
     vote_average: 7.3,
-    vote_count: 216
+    vote_count: 216,
   },
   {
     backdrop_path:
@@ -1310,7 +1310,7 @@ export const moviesData = [
     release_date: '2020-08-14',
     title: 'The SpongeBob Movie: Sponge on the Run',
     vote_average: 7.8,
-    vote_count: 2148
+    vote_count: 2148,
   },
   {
     backdrop_path:
@@ -1327,7 +1327,7 @@ export const moviesData = [
     release_date: '2019-12-04',
     title: 'Jumanji: The Next Level',
     vote_average: 7,
-    vote_count: 5762
+    vote_count: 5762,
   },
   {
     backdrop_path:
@@ -1344,7 +1344,7 @@ export const moviesData = [
     release_date: '2021-04-15',
     title: 'Ride or Die',
     vote_average: 6.7,
-    vote_count: 54
+    vote_count: 54,
   },
   {
     backdrop_path:
@@ -1361,6 +1361,43 @@ export const moviesData = [
     release_date: '2020-01-24',
     title: 'Assassin 33 A.D.',
     vote_average: 5.2,
-    vote_count: 59
-  }
+    vote_count: 59,
+  },
+];
+
+export const testMovies = [
+  {
+    backdrop_path:
+      'https://image.tmdb.org/t/p/w780/9yBVqNruk6Ykrwc32qrK2TIE5xw.jpg',
+    genre_ids: [28, 14, 12, 878],
+    id: 460465,
+    original_language: 'en',
+    original_title: 'Mortal Kombat',
+    overview:
+      "Washed-up MMA fighter Cole Young, unaware of his heritage, and hunted by Emperor Shang Tsung's best warrior, Sub-Zero, seeks out and trains with Earth's greatest champions as he prepares to stand against the enemies of Outworld in a high stakes battle for the universe.",
+    popularity: 5419.678,
+    poster_path:
+      'https://image.tmdb.org/t/p/w780/6Wdl9N6dL0Hi0T1qJLWSz6gMLbd.jpg',
+    release_date: '2021-04-07',
+    title: 'Mortal Kombat',
+    vote_average: 7.7,
+    vote_count: 2229,
+  },
+  {
+    backdrop_path:
+      'https://image.tmdb.org/t/p/w780/inJjDhCjfhh3RtrJWBmmDqeuSYC.jpg',
+    genre_ids: [878, 28, 18],
+    id: 399566,
+    original_language: 'en',
+    original_title: 'Godzilla vs. Kong',
+    overview:
+      'In a time when monsters walk the Earth, humanity’s fight for its future sets Godzilla and Kong on a collision course that will see the two most powerful forces of nature on the planet collide in a spectacular battle for the ages.',
+    popularity: 3087.183,
+    poster_path:
+      'https://image.tmdb.org/t/p/w780/pgqgaUx1cJb5oZQQ5v0tNARCeBp.jpg',
+    release_date: '2021-03-24',
+    title: 'Godzilla vs. Kong',
+    vote_average: 8.1,
+    vote_count: 5349,
+  },
 ];

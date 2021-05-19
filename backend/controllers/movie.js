@@ -47,7 +47,7 @@ export const searchMovies = async (req, res, next) => {
   }
 };
 
-const parseMovies = (moviesToParse) => {
+export const parseMovies = (moviesToParse) => {
   return moviesToParse.map((movie) => parseMovie(movie));
 };
 

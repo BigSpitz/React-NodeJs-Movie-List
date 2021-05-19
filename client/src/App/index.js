@@ -14,7 +14,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Switch>
         <AppLayout>
           <ToastContainer />
@@ -23,7 +23,7 @@ const App = () => {
           </Route>
         </AppLayout>
         <Route path="*">
-          <Redirect to="/" />
+          <Redirect to={process.env.PUBLIC_URL} />
         </Route>
       </Switch>
     </Router>

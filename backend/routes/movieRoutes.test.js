@@ -26,7 +26,8 @@ const requestBody = {
 const testMovieApiCall = (overrides = {}) => {
   return request(app)
     .post('/movie/search')
-    .set('Content-type', 'application/json')
+    .set('Content-type', 'application/vnd.api+json')
+    .set('accept', 'application/vnd.api+json')
     .send({ ...requestBody, ...overrides });
 };
 
@@ -35,8 +36,8 @@ describe('POST /movie', () => {
     test('should respond with a 200 status code', async (done) => {
       const response = await testMovieApiCall();
       expect(response.statusCode).toBe(200);
-      expect(Array.isArray(response.body.movies)).toBeTruthy();
-      expect(Number.isInteger(response.body.totalItems)).toBeTruthy();
+      expect(Array.isArray(response.body.data)).toBeTruthy();
+      expect(Number.isInteger(response.body.meta.totalItems)).toBeTruthy();
       done();
     });
   });
