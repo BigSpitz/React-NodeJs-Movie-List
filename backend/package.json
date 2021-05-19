@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Backend for React-NodeJs-Movie-List",
   "type": "module",
+  "engines": {
+    "node": "16.1.0"
+  },
   "main": "index.js",
   "jest": {
     "testEnvironment": "node",
